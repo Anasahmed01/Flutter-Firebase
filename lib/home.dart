@@ -15,16 +15,21 @@ class _HomeappState extends State<Homeapp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          textField('Enter UserName'),
-          textField('Enter UserName'),
-          textField('Enter UserName'),
-          ElevatedButton(
-            onPressed: () {},
-            child: const Text('Add Data'),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              textField('Enter UserName'),
+              textField('Enter Email'),
+              textField('Enter Password'),
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text('Add Data'),
+              ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
